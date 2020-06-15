@@ -1,0 +1,6 @@
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/MobileAppWsApplication.java
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/exceptions/ExceptionHandler.java
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/update/UpdateUserDetails.java
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/response/UserRest.java
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/ui/controller/UserController.java
+/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/request/UserDetailsRequest.java
