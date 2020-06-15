@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.catalina.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.ui.services.UserService;
 import com.example.demo.user.model.request.UserDetailsRequest;
 import com.example.demo.user.model.response.UserRest;
 import com.example.demo.user.model.update.UpdateUserDetails;
@@ -26,6 +28,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RequestMapping("users") //http:localhost:8080/users
 public class UserController {
 	
+	@Autowired
+	UserService us;
 	Map<String,UserRest> map ;
 	
 	@GetMapping(
@@ -34,14 +38,9 @@ public class UserController {
 //						MediaType.APPLICATION_JSON_VALUE
 						}
 			)
-	public ResponseEntity<UserRest> getUsers() {
-		UserRest ur = new UserRest();
+	public UserRest getUsers() {
 		
-		ur.setName("Paul");
-		ur.setEmail("paul@gmail.com");
-		ur.setAge(23);
-		
-		return new ResponseEntity<UserRest>(map.get(ur.getEmail()),HttpStatus.OK);
+		return us.getUser();
 		
 	}
 //	@GetMapping()
