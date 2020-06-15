@@ -1,6 +1,8 @@
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/MobileAppWsApplication.java
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/update/UpdateUserDetails.java
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/response/UserRest.java
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/exceptions/ExceptionHandle.java
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/ui/controller/UserController.java
-/home/bpatil/SpringBoot/mobileAppWs/src/main/java/com/example/demo/user/model/request/UserDetailsRequest.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/user/model/exceptions/ExceptionHandle.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/ui/services/UserService.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/ui/servicesImpl/UserServiceImpl.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/user/model/response/UserRest.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/ui/controller/UserController.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/MobileAppWsApplication.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/user/model/update/UpdateUserDetails.java
+/home/bpatil/SpringBoot/SpringBootCrud/SpringBootCRUD/src/main/java/com/example/demo/user/model/request/UserDetailsRequest.java
