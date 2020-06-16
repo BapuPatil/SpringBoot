@@ -1,0 +1,34 @@
+This is a Basic Spring Boot project to perform some basic CRUD operations
+Uses HashMap to store data(data is stored only during runtime)
+
+***********************************************************************************
+Sample POST request 
+***********************************************************************************
+curl --location --request POST 'http://localhost:8080/users/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name" : "b",
+    "email":"a@gmail.com",
+    "age":"33"
+}
+'
+***********************************************************************************
+Sample GET request
+***********************************************************************************
+
+curl --location --request GET 'http://localhost:8080/users/a@gmail.com'
+
+***********************************************************************************
+Sample PUT request
+***********************************************************************************
+curl --location --request PUT 'http://localhost:8080/users/a@gmail.com' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name" : "a",
+    "age":"23"
+}
+'
+***********************************************************************************
+Sample DELETE request
+***********************************************************************************
+curl --location --request DELETE 'http://localhost:8080/users/a@gmail.com'
