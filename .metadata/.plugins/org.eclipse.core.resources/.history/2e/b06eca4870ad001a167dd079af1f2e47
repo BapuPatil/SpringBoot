@@ -1,0 +1,8 @@
+package com.example.demo.user.model;
+
+public class UserRest {
+	private String name;
+	private String email;
+	private int age;
+	
+}

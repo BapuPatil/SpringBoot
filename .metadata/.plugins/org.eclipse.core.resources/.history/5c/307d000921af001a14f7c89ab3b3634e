@@ -1,0 +1,17 @@
+//package com.example.demo.user.model.exceptions;
+//
+//import org.springframework.http.HttpStatus;
+//import org.springframework.http.ResponseEntity;
+//import org.springframework.web.bind.annotation.*;
+////import org.springframework.web.bind.annotation.ExceptionHandler;
+//
+//@ControllerAdvice
+//public class ExceptionHandle {
+//	
+//	@ExceptionHandler
+//	public ResponseEntity<Void> exceptionHandler(){
+//		
+//		return  new ResponseEntity<Void>(HttpStatus.EXPECTATION_FAILED);
+//	}
+//
+//}

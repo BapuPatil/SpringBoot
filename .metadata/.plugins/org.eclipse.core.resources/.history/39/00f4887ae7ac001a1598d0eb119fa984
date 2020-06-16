@@ -1,0 +1,7 @@
+package com.example.demo.ui.controller;
+
+
+@RestController
+rw
+public class UserController {
+}

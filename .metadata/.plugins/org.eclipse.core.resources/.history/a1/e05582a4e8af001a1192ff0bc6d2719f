@@ -1,0 +1,5 @@
+package com.appdeveloperblog.photoshop.account.ui.controllers;
+
+public class AccountController {
+
+}

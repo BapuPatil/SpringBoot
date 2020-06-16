@@ -1,0 +1,12 @@
+package com.example.demo.ui.servicesImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.ui.services.UserService;
+
+@Service
+public class UserServiceImpl {
+	
+	UserService us;
+
+}
