@@ -30,8 +30,13 @@ public class UserController {
 	
 	@Autowired
 	UserService us;
+
+
 	Map<String,UserRest> map ;
+	//map for in memory database
 	
+
+
 	@GetMapping(
 				produces= {
 //						MediaType.APPLICATION_XML_VALUE,  //respond in XML
@@ -43,8 +48,12 @@ public class UserController {
 		return us.getUser();
 		
 	}
+
 //	@GetMapping()
 //	public String getUsers(
+
+			//Request Param is the query parameters passed in the URL
+
 //			@RequestParam(value="page" , defaultValue="1") int page,
 //			@RequestParam(value="limit" , defaultValue="23") int limit ,
 //			@RequestParam(value="sort" ,required = false,defaultValue="desc") String sort
@@ -53,7 +62,8 @@ public class UserController {
 //	}
 	
 	
-	@GetMapping(path = "/{emailId}") //response to GET request
+	// responds to HTTP GET request when the email ID is passed in the URL
+	@GetMapping(path = "/{emailId}") 
 	public ResponseEntity<UserRest> getUser(@PathVariable String emailId) {
 		if(map.containsKey(emailId)) {
 		return new ResponseEntity<UserRest> (map.get(emailId),HttpStatus.OK); 
@@ -62,6 +72,9 @@ public class UserController {
 	}
 		}
 	
+
+	//Responds to post request 
+	//produces , consumes data in both XML and JSON format 
 	@PostMapping(
 			produces= {
 					MediaType.APPLICATION_JSON_VALUE,
@@ -75,7 +88,7 @@ public class UserController {
 				}
 			
 			
-			)  //response to POST request
+			)  //response HTTP to POST request
 	public ResponseEntity<UserRest> createUser(@RequestBody UserDetailsRequest udr) {
 		
 		UserRest ur2 = new UserRest();
@@ -94,6 +107,9 @@ public class UserController {
 		
 		
 	}
+
+	//Responds to HTTP Put request 
+	//update a record containing the email passed in the URL
 
 	@PutMapping( path="/{email}",
 			produces= {MediaType.APPLICATION_JSON_VALUE,
@@ -117,7 +133,8 @@ public UserRest putUser(@PathVariable String email,@RequestBody UpdateUserDetail
 return ur2;
 }
 	
-	@DeleteMapping (path= "{mail}") //response to DELETE request"
+	@DeleteMapping (path= "{mail}") //response to HTTP DELETE request
+	//Deletes record with mail id passed in the URL 
 
 	public ResponseEntity<Void> deleteUser(@PathVariable String mail ) {
 		map.remove(mail);

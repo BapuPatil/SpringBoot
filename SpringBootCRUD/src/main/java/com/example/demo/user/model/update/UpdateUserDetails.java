@@ -1,5 +1,6 @@
 package com.example.demo.user.model.update;
 
+//class that responds to HTTP PUT request
 public class UpdateUserDetails {
 	private String name;
 	private int age;

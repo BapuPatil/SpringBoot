@@ -11,6 +11,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.sql.Timestamp;
 import java.util.Date;
 
+
+//class to handle exceptions
 @ControllerAdvice
 public class ExceptionHandle  extends ResponseEntityExceptionHandler{
 	

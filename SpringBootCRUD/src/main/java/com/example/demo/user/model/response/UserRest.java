@@ -1,5 +1,6 @@
 package com.example.demo.user.model.response;
 
+//class to repsond to HTTP GET request
 public class UserRest {
 	private String name;
 	private String email;
